@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header id="header">
         <div class="wrapper">
             <div class="header-logo">
                 <a href="/">
@@ -20,25 +21,23 @@
                     вул.Сагайдачного 18
             </div>
             <div class="header-contact">
-                <a href="tel:+38098754-55-33">
+                <a href="tel:+38098754-55-33" class="header-contact-phone">
                         (098) <b>754-55-33</b>
                 </a>
-            </div>
-            <div class="header-contact-email">
-                <a href="mailto:umbrelladiana@gmail.">
+                <a href="mailto:umbrelladiana@gmail." class="header-contact-email">
                         umbrelladiana@gmail.
                 </a>
-            </div>
+        </div>
             <div class="header-getprice">
-                <a href="header-getprice-botton" href="#">Отримати прай</a>
+                <a class="header-getprice-button" href="#">Отримати прайс</a>
             </div>
         </div>
     </header>
-    <section class="header-botton">
+    <section class="header-bottom">
         <div class="wrapper">
-            <nav class="header-botton-menu">
+            <nav class="header-bottom-menu">
                 <ul>
-                    <li><a href="#">Головна</a></li>
+                    <li class="current home"><a href="#">Головна</a></li>
                     <li><a href="#">Продукція</a></li>
                     <li><a href="#">Наша продукція</a></li>
                     <li><a href="#">Новини</a></li>
@@ -46,11 +45,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="header-botton-search"></div>
+        <div class="header-bottom-search"></div>
     </section>
     <section class="home-slider">
         <div class="wrapper">
-            <div class="slider">
+            <div class="slide">
                 <h2 class="slide-title">
                     виготовляємо<br>
                     товари
@@ -70,32 +69,116 @@
             <div class="home-news-container">
                 <section class="home-news-container-item">
                     <a href="#"><img src="img/c295cdbb5210b4f00944f4cdbbf4bbb3.jpg"></a>
-                </div>
-                    <a class="home-news-container-item-title" href="#"></a>
+                
+                    <a class="home-news-container-item-title" href="#">Нанопокриття для захисту тканин<br> і взуття від води та бруду</a>
                     <p class="home-news-container-item-text">
-
+                        Гідрофобні спреї, розроблені на основі нанотехнологій, для захисту будь-я
+                         виробів із пористих матеріалів, таких як замша, нубук, шкіра, замінник шкіри, 
+                         повсть та ін. Екологічно не шкідливі й не токсичні. Довготривалий, невидимий і надійний захист. 
                     </p>
                 </section>
                 <section class="home-news-container-item">
                         <a href="#"><img src="img/testo-340-application-emission-003550_master.jpg"></a>
-                    </div>
-                        <a class="home-news-container-item-title" href="#"></a>
+                    
+                        <a class="home-news-container-item-title" href="#">Буферні розчини для<br> вимірювальної техніки</a>
                         <p class="home-news-container-item-text">
-    
+                            Буфери для калібрування pH-метрів, кондуктометрів і солемірів. Буферні розчини для ОВП-метрів.
+                             Електроліти для оксиметрів. Розчин для ферментативного очищення електродів від білкових забруднювачів.
+                              Розчини для збереження електродів.
                         </p>
                     </section>
                     <section class="home-news-container-item">
-                            <a href="#"><img src="img/provedenie-analiza-vody-iz-skvazhiny_03-650x452.jpg"></a>
-                        </div>
-                            <a class="home-news-container-item-title" href="#"></a>
+                            <a href="#"><img src="img/provedenie-analiza-vody-iz-skvazhiny_03-650x452.png"></a>
+                        
+                            <a class="home-news-container-item-title" href="#">Експрес-тести для аналізу<br> 
+                                в домашніх умовах </a>
                             <p class="home-news-container-item-text">
-        
+                                Тест-смужки і реактиви для визначення вмісту формальдегіду у м’ясних та риб’ячих продуктах, вмісту нітратів в овочах і фруктах,
+                                 вмісту важких металів у всіх продуктах харчування; перевірки якості побутової хімії,
+                                 будівельних матеріалів, косметики; виявлення низькоякісних товарів і продуктів; проведення аналізу ґрунту та ін.
                             </p>
                         </section>
             
         </div>
 
     </article>
+    <footer id="footer">
+        <div class="wrapper">
+            <section class="footer-col">
+                <img src="img/Logo2.png">
+                <p class="footer-aboutus">
+                    Український виробник різноманітних хімічних товарів і реагентів спеціального застосування.
+                     Товари виготовляються за власними рецептурами виробника, 
+                    за рецептурами замовника та у форматі White Label. 
+                </p>
+            </section>
+            <section class="footer-col">
+                <h4 class="footer-col-title">Меню</h4>
+                <nav class="footer-menu">
+                    <ul>
+                        <li class="footer-menu-item"><a href="#">Про нас</a></li>
+                        <li class="footer-menu-item"><a href="#">Наша продукція</a></li>
+                        <li class="footer-menu-item"><a href="#">Новини</a></li>
+                        <li class="footer-menu-item"><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footer-col">
+                <h4 class="footer-col-title">Новини</h4>
+                <ul class="footer-blog">
+                    <li>
+                        <a href="#" class="footer-blog-image">
+                            <img src="img/stock-photo2.jpg">
+                        </a>
+                        <a href="#" class="footer-blog-title">
+                            Виробник у<br>
+                            форматі White<br>
+                            Label.
+                        </a>
+                        <br>
+                        <br>
+                        <time datetime="2019-09-20">20-07-2018</time>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-blog-image">
+                            <img src="img/stock-photo-aerial-view-white-oil-tank-storage-of-oil-and-petrochemical-products-ready-for-logistic-and-717264916.jpg">
+                        </a>
+                        <a href="#" class="footer-blog-title">
+                            Виробник у<br>
+                            форматі White<br>
+                            Label.
+                        </a>
+                        <br>
+                        <br>
+                        <time datetime="2019-09-20">20-09-2019</time>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-col">
+                <h4 class="footer-col-title-contact">Контакты</h4>
+                <address class="footer-address">
+                    м.Київ<br>
+                    вул.Сагайдачного 18
+                </address>
+                <br>
+                <a href="tel:+380987545533" class="footer-phone">
+                    (098) <b>754-55-33</b>
+                </a>
+                <br>
+                <br>
+                <a class="footer-email" href="mailto:umbrelladiana@gmail.com">
+                    umbrelladiana@gmail.com
+                </a>
+                <br>
+                <br>
+
+                <div class="footer-worktime">
+                    Пн.-Пт.: з 10.00 - 18.00<br>
+                    Суб. - Нд. : вихідний
+                </div>
+            </section>
+        </div>
+    </footer>
     
 </body>
 </html>
