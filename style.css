@@ -150,8 +150,8 @@ a{
 .home-title{
     color: #86c043;
     font-size: 48px;
-    text-shadow: 2px 1px 0px rgba(150, 150, 150, 1);
-    font-weight: 400;
+    text-shadow: 1px 1px 0px rgba(68, 70, 79, 0.5);
+    font-weight: 500;
     text-align: center;
 
 }
@@ -162,17 +162,19 @@ a{
     
 }
 
-
+.home-news-container-item:nth-child(3n){
+    margin-right: 0;
+}
 .home-news-container-item{
     display: block;
     float: left;
     width: 403px;
     height: 446px;
-    margin-left: 15px;
+    margin-right: 26px;
     color: #44464f;
     background-color: #f5f6f8;
     border-radius: 3px;
-    box-shadow: 3px 3px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 1px 3px 0px rgba(88, 88, 88, 0.25);
       
 }
 
@@ -180,12 +182,13 @@ a{
 
 .home-news-container-item-text{
     text-align: left;
-    margin-left: 20px;
+    margin-left: 26px;
+    margin-right: 26px;
 }
 .home-news-container-item-title{
     display: block;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 26px;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -193,7 +196,7 @@ a{
 }
 #footer{ 
     margin-top: 60px;
-    background-color: #86c043;
+    background-color: #689434;
 }
 #footer .wrapper::after{
     content: '';
@@ -203,22 +206,33 @@ a{
 .footer-col{
     display: block;
     float: left;
-    height: 354px;
-    width: 300px;
-    margin-left: 15px;
     padding-top: 30px;
+    padding-bottom: 75px;
     text-align: left;
     color: #fff;
+}
+.footer-col-logo{
+    width: 307px;
+    margin-right: 100px;
+}
+.footer-col-menu{
+    width: 142px;
+    margin-right: 85px;
+}
+.footer-col-blog{
+    width: 211px;
+    margin-right: 125px;
+    text-align: center;
+}
+.footer-col-title{
+    text-transform: uppercase;
 }
 .footer-aboutus{
     text-align: left;
     font-weight: 300;
 }
-.footer-col-title{
-    padding-left: 90px;
-    text-align: left;
-    text-transform: uppercase;
-}
+
+
 .footer-col-title, .footer-email{
     color: #ffd307;
 }
@@ -230,7 +244,6 @@ a{
 }
 li.footer-menu-item{
     margin-top: 30px;
-    margin-left: 90px;
     text-transform: uppercase;
     text-align: left;
 
